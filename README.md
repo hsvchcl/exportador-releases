@@ -11,7 +11,25 @@
 - macOS 13.3 o superior · macOS 13.3 or later
 - Apple Silicon e Intel · Apple Silicon and Intel
 - Gratis · Free
-- Firmada con Developer ID y notarizada por Apple · Signed with Developer ID and notarized by Apple
+- Firmada con Developer ID · Signed with Developer ID
+
+### Instalar con un comando · Install with one command
+
+En Terminal · In Terminal:
+
+```sh
+curl -fsSL https://exportador-beta.web.app/install.sh | sh
+```
+
+Descarga la última versión, comprueba que esté firmada por su desarrollador, la copia a Aplicaciones y la abre, sin avisos. · Downloads the latest version, checks it is signed by its developer, copies it to Applications and opens it, with no warnings.
+
+### Si usas el DMG · If you use the DMG
+
+Esta beta aún no está notarizada por Apple: la primera vez, macOS avisa que no pudo verificarla. Ábrela una vez y ve a *Ajustes del Sistema › Privacidad y seguridad › Abrir igualmente*, o en Terminal: · This beta is not yet notarized by Apple: the first time, macOS warns it couldn’t verify it. Open it once and go to *System Settings › Privacy & Security › Open Anyway*, or in Terminal:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/Exportador.app
+```
 
 Versiones anteriores y notas de cada versión en [Releases](https://github.com/hsvchcl/exportador-releases/releases). · Previous versions and release notes in [Releases](https://github.com/hsvchcl/exportador-releases/releases).
 
